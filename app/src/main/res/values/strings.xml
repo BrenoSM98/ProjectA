@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Projeto A</string>
+    <string name="home">Home</string>
+    <string name="perfil">Perfil</string>
+    <string name="notifica_es">Notificações</string>
+    <string name="menu">Menu</string>
+    <string name="exerc_cios_aer_bicos"><![CDATA[Exercícios Aeróbicos >]]></string>
+    <string name="nutricionistas_recomendados"><![CDATA[Nutricionistas Recomendados >]]></string>
+    <string name="trainers_recomendados"><![CDATA[Trainers Recomendados >]]></string>
+</resources>
