@@ -2,6 +2,7 @@
 
 package com.example.projetoa
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -20,6 +21,9 @@ class Home : AppCompatActivity() {
                     true
                 }
                 R.id.nav_profile -> {
+                    bottomNavigationView.setOnClickListener{
+                     val intent = Intent (this, Profile::class.java)
+                    }
 
                     true
                 }
