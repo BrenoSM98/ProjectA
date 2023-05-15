@@ -7,4 +7,17 @@
     <string name="exerc_cios_aer_bicos"><![CDATA[Exercícios Aeróbicos >]]></string>
     <string name="nutricionistas_recomendados"><![CDATA[Nutricionistas Recomendados >]]></string>
     <string name="trainers_recomendados"><![CDATA[Trainers Recomendados >]]></string>
+    <string name="exerc_cios_superiores"><![CDATA[Exercícios Superiores >]]></string>
+    <string name="exerc_cios_inferiores"><![CDATA[Exercícios Inferiores >]]></string>
+    <string name="monte_sua_dieta"><![CDATA[Monte Sua Dieta >]]></string>
+    <string name="ainda_n_o_sei"><![CDATA[Ainda não sei >]]></string>
+    <string name="todo">TODO</string>
+    <string name="busca">busca</string>
+    <string name="chat">chat</string>
+    <string name="aba_para_lembretes_do_us_ario">Aba para lembretes do usúario!!</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
 </resources>
