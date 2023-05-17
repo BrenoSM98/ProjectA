@@ -39,12 +39,21 @@ class Home : AppCompatActivity() {
             }
         }
         val imageViews: List<ImageView> = listOf(
-            findViewById(R.id.image_view1),
-            findViewById(R.id.image_view2),
-            findViewById(R.id.image_view3)
+            findViewById(R.id.imageView1),
+            findViewById(R.id.imageView2),
+            findViewById(R.id.imageView3),
+            findViewById(R.id.imageView4),
+            findViewById(R.id.imageView5),
+            findViewById(R.id.imageView6),
+            findViewById(R.id.imageView7),
+            findViewById(R.id.imageView8),
+            findViewById(R.id.imageView9),
+            findViewById(R.id.imageView10),
+            findViewById(R.id.imageView11),
+            findViewById(R.id.imageView12)
         )
 
-        val imagens = listOf(R.drawable.imagem1, R.drawable.imagem2, R.drawable.imagem3)
+        val imagens = listOf(R.drawable.Lana, R.drawable.Megan, R.drawable.Angelina, R.drawable.Nicole, R.drawable.Yvonne, R.drawable.Mia, R.drawable.Kid, R.drawable.Birulinho, R.drawable.Moro, R.drawable.Nine, R.drawable.Xandao, R.drawable.Saitama)
 
         for (i in imageViews.indices) {
             Glide.with(this)

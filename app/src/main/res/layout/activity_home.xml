@@ -42,7 +42,7 @@
                 android:id="@+id/imageView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/dog1"
                 android:src="@drawable/d3"
                 tools:ignore="ImageContrastCheck" />
 
@@ -50,14 +50,14 @@
                 android:id="@+id/imageView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo1"
+                android:contentDescription="@string/dog2"
                 android:src="@drawable/d4" />
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:contentDescription="@string/todo2"
+                android:contentDescription="@string/dog3"
                 android:src="@drawable/d5"
                 tools:ignore="ImageContrastCheck" />
 
@@ -65,7 +65,7 @@
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo3"
+                android:contentDescription="@string/dog4"
                 android:src="@drawable/d6"
                 tools:ignore="ImageContrastCheck" />
         </LinearLayout>
@@ -105,43 +105,43 @@
                 android:id="@+id/imageView1"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:contentDescription="@string/todo4"
-                android:src="@drawable/d1" />
+                android:contentDescription="@string/lana"
+                android:src="@drawable/Lana" />
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:contentDescription="@string/megan"
+                android:src="@drawable/Megan" />
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Angelina"
+                android:contentDescription="@string/angelina" />
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Yvonne"
+                android:contentDescription="@string/yvonne" />
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Nicole"
+                android:contentDescription="@string/nicole" />
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Mia"
+                android:contentDescription="@string/mia" />
 
 
         </LinearLayout>
@@ -165,43 +165,43 @@
                 android:id="@+id/imageView7"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo5"
-                android:src="@drawable/d2" />
+                android:contentDescription="@string/kid"
+                android:src="@drawable/Kid" />
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Birulinho"
+                android:contentDescription="@string/birulinho"/>
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Moro"
+                android:contentDescription="@string/moro"/>
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Nine"
+                android:contentDescription="@string/nine"/>
 
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Xandao"
+                android:contentDescription="@string/xandao"/>
 
             <ImageView
                 android:id="@+id/imageView12"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/Saitama"
+                android:contentDescription="@string/saitama"/>
 
         </LinearLayout>
     </HorizontalScrollView>
