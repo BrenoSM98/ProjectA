@@ -4,7 +4,11 @@ package com.example.projetoa
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CircleCrop
+import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -17,22 +21,36 @@ class Home : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){
                 R.id.nav_home -> {
-
+                    val intent = Intent (this, Home::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_profile -> {
-                    bottomNavigationView.setOnClickListener{
                      val intent = Intent (this, Profile::class.java)
-                    }
-
+                        startActivity(intent)
                     true
                 }
                 R.id.nav_notifications -> {
-
+                    val intent = Intent (this, Notifications::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
             }
+        }
+        val imageViews: List<ImageView> = listOf(
+            findViewById(R.id.image_view1),
+            findViewById(R.id.image_view2),
+            findViewById(R.id.image_view3)
+        )
+
+        val imagens = listOf(R.drawable.imagem1, R.drawable.imagem2, R.drawable.imagem3)
+
+        for (i in imageViews.indices) {
+            Glide.with(this)
+                .load(imagens[i])
+                .apply(RequestOptions.bitmapTransform(CircleCrop()))
+                .into(imageViews[i])
         }
     }
 }
