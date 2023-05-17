@@ -106,41 +106,41 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/lana"
-                android:src="@drawable/Lana" />
+                android:src="@drawable/lana" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/megan"
-                android:src="@drawable/Megan" />
+                android:src="@drawable/megan" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Angelina"
+                android:src="@drawable/angelina"
                 android:contentDescription="@string/angelina" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Yvonne"
+                android:src="@drawable/yvonne"
                 android:contentDescription="@string/yvonne" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Nicole"
+                android:src="@drawable/nicole"
                 android:contentDescription="@string/nicole" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Mia"
+                android:src="@drawable/mia"
                 android:contentDescription="@string/mia" />
 
 
@@ -166,41 +166,41 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/kid"
-                android:src="@drawable/Kid" />
+                android:src="@drawable/kid" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Birulinho"
+                android:src="@drawable/birulinho"
                 android:contentDescription="@string/birulinho"/>
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Moro"
+                android:src="@drawable/moro"
                 android:contentDescription="@string/moro"/>
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Nine"
+                android:src="@drawable/nine"
                 android:contentDescription="@string/nine"/>
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Xandao"
+                android:src="@drawable/xandao"
                 android:contentDescription="@string/xandao"/>
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/Saitama"
+                android:src="@drawable/saitama"
                 android:contentDescription="@string/saitama"/>
 
         </LinearLayout>

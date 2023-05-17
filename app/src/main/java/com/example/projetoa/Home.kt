@@ -53,7 +53,7 @@ class Home : AppCompatActivity() {
             findViewById(R.id.imageView12)
         )
 
-        val imagens = listOf(R.drawable.Lana, R.drawable.Megan, R.drawable.Angelina, R.drawable.Nicole, R.drawable.Yvonne, R.drawable.Mia, R.drawable.Kid, R.drawable.Birulinho, R.drawable.Moro, R.drawable.Nine, R.drawable.Xandao, R.drawable.Saitama)
+        val imagens = listOf(R.drawable.lana, R.drawable.megan, R.drawable.angelina, R.drawable.nicole, R.drawable.yvonne, R.drawable.mia, R.drawable.kid, R.drawable.birulinho, R.drawable.moro, R.drawable.nine, R.drawable.xandao, R.drawable.saitama)
 
         for (i in imageViews.indices) {
             Glide.with(this)
