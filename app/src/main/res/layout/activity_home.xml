@@ -105,43 +105,37 @@
                 android:id="@+id/imageView1"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:contentDescription="@string/lana"
                 android:src="@drawable/lana" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/megan"
                 android:src="@drawable/megan" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/angelina"
-                android:contentDescription="@string/angelina" />
+                android:src="@drawable/angelina"/>
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/yvonne"
-                android:contentDescription="@string/yvonne" />
+                android:src="@drawable/yvonne"/>
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/nicole"
-                android:contentDescription="@string/nicole" />
+                android:src="@drawable/nicole"/>
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mia"
-                android:contentDescription="@string/mia" />
+                android:src="@drawable/mia"/>
 
 
         </LinearLayout>
@@ -165,43 +159,37 @@
                 android:id="@+id/imageView7"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/kid"
                 android:src="@drawable/kid" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/birulinho"
-                android:contentDescription="@string/birulinho"/>
+                android:src="@drawable/birulinho"/>
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/moro"
-                android:contentDescription="@string/moro"/>
+                android:src="@drawable/moro"/>
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/nine"
-                android:contentDescription="@string/nine"/>
+                android:src="@drawable/nine"/>
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/xandao"
-                android:contentDescription="@string/xandao"/>
+                android:src="@drawable/xandao"/>
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/saitama"
-                android:contentDescription="@string/saitama"/>
+                android:src="@drawable/saitama"/>
 
         </LinearLayout>
     </HorizontalScrollView>
