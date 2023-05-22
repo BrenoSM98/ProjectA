@@ -19,6 +19,7 @@ class Home : AppCompatActivity() {
     private lateinit var bottomNavigationView: BottomNavigationView
     private var selectedItem = R.id.nav_home
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
