@@ -24,8 +24,6 @@ class Notifications : AppCompatActivity() {
                     true
                 }
                 R.id.nav_notifications -> {
-                    val intent = Intent (this, Notifications::class.java)
-                    startActivity(intent)
                     true
                 }
                 else -> false

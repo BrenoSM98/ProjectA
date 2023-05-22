@@ -18,34 +18,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_navigation_menu"
-        tools:ignore="VisualLintBottomNav">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        tools:ignore="VisualLintBottomNav"/>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="122dp"
-        android:layout_height="123dp"
+        android:layout_width="147dp"
+        android:layout_height="145dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.072"
         app:srcCompat="@drawable/d8" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="127dp"
-        android:layout_height="396dp"
-        android:text="Teste de perfil onde contera nome dados pessoais referente ao usúario que serão inseridos pelo próprio."
-        android:textSize="20sp"
-        android:textAlignment="center"
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/baseline_edit_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/dadosTextView"
+        android:layout_width="206dp"
+        android:layout_height="369dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
