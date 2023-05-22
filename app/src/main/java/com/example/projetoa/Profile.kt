@@ -1,31 +1,35 @@
 package com.example.projetoa
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Profile : AppCompatActivity() {
     private lateinit var dadosTextView: TextView
     private lateinit var editButton: Button
-    private lateinit var dadosViewModel: DadosViewModel
+
+    private val sharedPreferencesKey = "user_data"
+
+    private lateinit var bottomNavigationView: BottomNavigationView
+    private var selectedItem = R.id.nav_profile
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        dadosViewModel = ViewModelProvider(this).get(DadosViewModel::class.java)
-
         dadosTextView = findViewById(R.id.dadosTextView)
         editButton = findViewById(R.id.editButton)
 
-        val nome = dadosViewModel.nome
-        val idade = dadosViewModel.idade
-        val sexo = dadosViewModel.sexo
-        val cidade = dadosViewModel.cidade
-        val objetivo = dadosViewModel.objetivo
+        val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
+        val nome = sharedPreferences.getString("nome", "")
+        val idade = sharedPreferences.getString("idade", "")
+        val sexo = sharedPreferences.getString("sexo", "")
+        val cidade = sharedPreferences.getString("cidade", "")
+        val objetivo = sharedPreferences.getString("objetivo", "")
 
         val dados = "Nome: $nome\nIdade: $idade\nSexo: $sexo\nCidade: $cidade\nObjetivo: $objetivo"
         dadosTextView.text = dados
@@ -35,8 +39,10 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView.selectedItemId = selectedItem
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        selectedItem = item.itemId
             when(item.itemId){
                 R.id.nav_home -> {
                     val intent = Intent (this, Home::class.java)

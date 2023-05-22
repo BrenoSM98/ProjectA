@@ -1,12 +1,12 @@
 package com.example.projetoa
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 
 
 class DataActivity : AppCompatActivity() {
@@ -17,13 +17,12 @@ class DataActivity : AppCompatActivity() {
     private lateinit var cidadeEditText: EditText
     private lateinit var objetivoEditText: EditText
     private lateinit var confirmarButton: Button
-    private lateinit var dadosViewModel: DadosViewModel
+
+    private val sharedPreferencesKey = "user_data"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data)
-
-        dadosViewModel = ViewModelProvider(this).get(DadosViewModel::class.java)
 
         textTextView = findViewById(R.id.textTextView)
         nomeEditText = findViewById(R.id.nomeEditText)
@@ -34,15 +33,24 @@ class DataActivity : AppCompatActivity() {
         confirmarButton = findViewById(R.id.confirmarButton)
 
         confirmarButton.setOnClickListener{
-            dadosViewModel.nome = nomeEditText.text.toString()
-            dadosViewModel.idade = idadeEditText.text.toString()
-            dadosViewModel.sexo = sexoEditText.text.toString()
-            dadosViewModel.cidade = cidadeEditText.text.toString()
-            dadosViewModel.objetivo = objetivoEditText.text.toString()
+            val nome = nomeEditText.text.toString()
+            val idade = idadeEditText.text.toString()
+            val sexo = sexoEditText.text.toString()
+            val cidade = cidadeEditText.text.toString()
+            val objetivo = objetivoEditText.text.toString()
 
+            val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.putString("nome", nome)
+            editor.putString("idade", idade)
+            editor.putString("sexo", sexo)
+            editor.putString("cidade", cidade)
+            editor.putString("objetivo", objetivo)
+            editor.apply()
 
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

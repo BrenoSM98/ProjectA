@@ -12,6 +12,18 @@
         android:theme="@style/Theme.ProjetoA"
         tools:targetApi="31">
         <activity
+            android:name=".Dieta"
+            android:exported="false" />
+        <activity
+            android:name=".Inferiores"
+            android:exported="false" />
+        <activity
+            android:name=".Superiores"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobicos"
+            android:exported="false" />
+        <activity
             android:name=".DataActivity"
             android:exported="false" />
         <activity
