@@ -6,4 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".Inferiores">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/inferTextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Exercícios Inferiores"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/extensoraTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extensora Quadriceps" />
+
+            <ImageView
+                android:id="@+id/extensoraImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/infer1" />
+
+            <TextView
+                android:id="@+id/flexoraTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flexora Deitada" />
+
+            <ImageView
+                android:id="@+id/flexoraGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/infer2gif" />
+
+            <TextView
+                android:id="@+id/agachaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agachamento Total" />
+
+            <ImageView
+                android:id="@+id/agachaGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/infer3gif" />
+
+            <TextView
+                android:id="@+id/legTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leg Press" />
+
+            <ImageView
+                android:id="@+id/legImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/infer4" />
+
+            <TextView
+                android:id="@+id/panturrilhaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panturrilha Vertical" />
+
+            <ImageView
+                android:id="@+id/panturrilhaGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/infer5gif" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
