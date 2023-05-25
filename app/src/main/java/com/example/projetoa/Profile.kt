@@ -4,8 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Profile : AppCompatActivity() {
@@ -21,9 +23,12 @@ class Profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        showGif()
+
         dadosTextView = findViewById(R.id.dadosTextView)
         editButton = findViewById(R.id.editButton)
 
+        // Acesso aos dados do usuário armazenados nas preferências compartilhadas
         val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
         val nome = sharedPreferences.getString("nome", "")
         val idade = sharedPreferences.getString("idade", "")
@@ -34,11 +39,11 @@ class Profile : AppCompatActivity() {
         val dados = "Nome: $nome\nIdade: $idade\nSexo: $sexo\nCidade: $cidade\nObjetivo: $objetivo"
         dadosTextView.text = dados
 
-        editButton.setOnClickListener{
+        editButton.setOnClickListener{ // Navega para a atividade DataActivity para editar os dados do usuário
             val intent = Intent(this, DataActivity::class.java)
             startActivity(intent)
         }
-
+        // Configuração do Bottom Navigation View
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.selectedItemId = selectedItem
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
@@ -60,5 +65,9 @@ class Profile : AppCompatActivity() {
                 else -> false
             }
         }
+    }
+    fun showGif() {
+        val imageView: ImageView = findViewById(R.id.gifleoImageView)
+        Glide.with(this).load(R.drawable.gifleo).into(imageView)
     }
 }

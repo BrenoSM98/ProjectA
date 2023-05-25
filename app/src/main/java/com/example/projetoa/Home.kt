@@ -23,28 +23,29 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        // Inicializa os botões da tela inicial
         aerobicosButton = findViewById(R.id.aerobicosButton)
         superioresButton = findViewById(R.id.superioresButton)
         inferioresButton = findViewById(R.id.inferioresButton)
         dietaButton = findViewById(R.id.dietaButton)
 
         aerobicosButton.setOnClickListener{
-            val intent = Intent(this, Aerobicos::class.java)
+            val intent = Intent(this, Aerobicos::class.java)  // Navega para a atividade Aerobicos
             startActivity(intent)
         }
         superioresButton.setOnClickListener{
-            val intent = Intent(this, Superiores::class.java)
+            val intent = Intent(this, Superiores::class.java) // Navega para a atividade Superiores
             startActivity(intent)
         }
         inferioresButton.setOnClickListener{
-            val intent = Intent(this, Inferiores::class.java)
+            val intent = Intent(this, Inferiores::class.java)  // Navega para a atividade Inferiores
             startActivity(intent)
         }
         dietaButton.setOnClickListener{
-            val intent = Intent(this, Dieta::class.java)
+            val intent = Intent(this, Dieta::class.java) // Navega para a atividade Dieta
             startActivity(intent)
         }
-
+        // Configuração das imagens circulares
         val imageViews: List<ImageView> = listOf(
             findViewById(R.id.imageView1),
             findViewById(R.id.imageView2),
@@ -68,21 +69,21 @@ class Home : AppCompatActivity() {
                 .apply(RequestOptions.bitmapTransform(CircleCrop()))
                 .into(imageViews[i])
         }
-
+        // Configuração do Bottom Navigation View
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.selectedItemId = selectedItem
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             selectedItem = item.itemId
             when(item.itemId){
-                R.id.nav_home -> {
+                R.id.nav_home -> {  // Mantém-se na tela inicial
                     true
                 }
-                R.id.nav_profile -> {
+                R.id.nav_profile -> {  // Navega para a atividade Profile
                     val intent = Intent (this, Profile::class.java)
                     startActivity(intent)
                     true
                 }
-                R.id.nav_notifications -> {
+                R.id.nav_notifications -> {   // Navega para a atividade Notifications
                     val intent = Intent (this, Notifications::class.java)
                     startActivity(intent)
                     true

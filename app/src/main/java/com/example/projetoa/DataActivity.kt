@@ -32,6 +32,7 @@ class DataActivity : AppCompatActivity() {
         objetivoEditText = findViewById(R.id.objetivoEditText)
         confirmarButton = findViewById(R.id.confirmarButton)
 
+        // Botão "Confirmar" para salvar os dados e navegar de volta para o perfil
         confirmarButton.setOnClickListener{
             val nome = nomeEditText.text.toString()
             val idade = idadeEditText.text.toString()
@@ -39,6 +40,7 @@ class DataActivity : AppCompatActivity() {
             val cidade = cidadeEditText.text.toString()
             val objetivo = objetivoEditText.text.toString()
 
+            // Acesso às preferências compartilhadas para armazenar os dados do usuário
             val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
             val editor = sharedPreferences.edit()
             editor.putString("nome", nome)
@@ -48,9 +50,9 @@ class DataActivity : AppCompatActivity() {
             editor.putString("objetivo", objetivo)
             editor.apply()
 
-            val intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, Profile::class.java)  // Navega para a atividade de perfil
             startActivity(intent)
-            finish()
+            finish()   // Finaliza esta atividade para impedir a navegação de voltar para ela
         }
     }
 }

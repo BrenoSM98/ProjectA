@@ -11,12 +11,12 @@ class Inferiores : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inferiores)
 
-        showGif()
+        showGif() // Exibe o GIF animado
 
     }
 
     fun showGif() {
-        val imageView1: ImageView = findViewById(R.id.flexoraGifImageView)
+        val imageView1: ImageView = findViewById(R.id.flexoraGifImageView)  // Carrega e exibe o GIF na ImageView especificada
         Glide.with(this).load(R.drawable.infer2gif).into(imageView1)
 
         val imageView2: ImageView = findViewById(R.id.agachaGifImageView)

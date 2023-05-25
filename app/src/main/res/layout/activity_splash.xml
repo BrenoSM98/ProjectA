@@ -8,12 +8,12 @@
     tools:context=".Splash">
 
     <ImageView
-        android:id="@+id/halter"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/splash"
+        android:layout_width="319dp"
+        android:layout_height="333dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/halter" />
+        app:srcCompat="@drawable/fitgoals" />
 </androidx.constraintlayout.widget.ConstraintLayout>

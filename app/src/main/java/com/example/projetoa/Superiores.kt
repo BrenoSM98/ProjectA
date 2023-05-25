@@ -11,11 +11,11 @@ class Superiores : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_superiores)
 
-        showGif()
+        showGif()  // Exibe o GIF animado
 
     }
     fun showGif() {
-        val imageView:ImageView = findViewById(R.id.roscaGifImageView)
+        val imageView:ImageView = findViewById(R.id.roscaGifImageView)  // Carrega e exibe o GIF na ImageView especificada
         Glide.with(this).load(R.drawable.super5gif).into(imageView)
     }
 }

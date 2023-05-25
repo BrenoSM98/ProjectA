@@ -41,32 +41,28 @@
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/dog1"
-                android:src="@drawable/d3"
+                android:layout_height="150dp"
+                android:src="@drawable/feed1"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/imageView14"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/dog2"
-                android:src="@drawable/d4" />
+                android:layout_height="150dp"
+                android:src="@drawable/feed2" />
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:contentDescription="@string/dog3"
-                android:src="@drawable/d5"
+                android:layout_height="150dp"
+                android:src="@drawable/feed3"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/dog4"
-                android:src="@drawable/d6"
+                android:layout_height="150dp"
+                android:src="@drawable/feed4"
                 tools:ignore="ImageContrastCheck" />
         </LinearLayout>
     </ScrollView>
